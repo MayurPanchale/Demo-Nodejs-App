@@ -21,6 +21,10 @@ router.post('/register', async (req, res) => {
     })
 })
 
+router.get('/', async (req, res) => {
+    res.send("I got inside")
+})
+
 router.get('/findAll', async (req, res) => {
     console.log("inside users route!");
     //find a new user
